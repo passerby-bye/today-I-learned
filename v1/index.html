@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Today I learned</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <div>img</div>
+          <h1>Today I learned</h1>
+        </div>
+        <button class="btn btn-large btn-open">share a fact</button>
+      </header>
+      <form class="fact-form hidden">
+        <input type="text" placeholder="Share your sentence" />
+        <input type="text" />
+        <select>
+          <option value="front-end">front-end</option>
+          <option value="Python">Python</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+      <main class="main">
+        <aside>
+          <ul>
+            <li><button class="btn btn-all">ALL</button></li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #e9d5ff"
+              >
+                front-end
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #d1fae5"
+              >
+                Python
+              </button>
+            </li>
+          </ul>
+        </aside>
+        <section>
+          <ul class="facts-list">
+            <li class="fact">
+              <p>
+                My first sentence
+                <a
+                  class="source"
+                  href="https://developer.mozilla.org/zh-CN/"
+                  target="_blank"
+                  >source</a
+                >
+              </p>
+              <span class="tag" style="background-color: #e9d5ff"
+                >front-end</span
+              >
+              <div class="vote-buttons">
+                <button>💖 22</button>
+                <button>💯 22</button>
+              </div>
+            </li>
+            <li class="fact">
+              <p>My second sentence</p>
+              <span class="tag" style="background-color: #d1fae5">python</span>
+              <div class="vote-buttons">
+                <button>💖 22</button>
+                <button>💯 22</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
